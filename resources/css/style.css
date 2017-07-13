@@ -1,0 +1,58 @@
+html{
+  font-size: 18px;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Hind Guntar', sans-serif;
+  font-weight: 600;
+  color: #a1a178;
+  line-height: 1.4;
+}
+/*Header*/
+
+header {
+  position: fixed;
+  z-index: 5;
+  background-color: #ffffff;
+  width: 100%;
+}
+
+header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 3.56rem;
+  padding: 1.33rem;
+}
+
+header .logo {
+  display: flex;
+  align-items: center;
+}
+
+#first {
+  color: black;
+  font-weight: lighter;
+}
+/* Nav Section */
+
+header nav ul {
+  display: flex;
+}
+
+.desktop nav li {
+ padding-right: 1.33rem;
+}
+
+a {
+  text-decoration: none;
+}
+
+nav .learning-options li a {
+  color: #a1a178;
+}
+
+ a:hover {
+  border-bottom: 2px solid #a1a178;
+}
