@@ -1,6 +1,6 @@
 html{
   font-size: 18px;
-  box-sizing: border-box;
+  /*box-sizing: border-box;*/
 }
 
 body {
@@ -22,7 +22,7 @@ header .container {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 3.56rem;
+  height: 1rem;
   padding: 1.33rem;
 }
 
@@ -55,4 +55,50 @@ nav .learning-options li a {
 
  a:hover {
   border-bottom: 2px solid #a1a178;
+}
+
+/* Main Content */
+.maincontent {
+  padding-top: 3.56rem;
+}
+
+/* Upper Box */
+section {
+  display: flex;
+}
+
+#upper-box {
+  align-items: center;
+  background-color: #b6b696;
+  padding: 1.78rem 1.33rem;
+}
+
+#people-studying {
+  width: 60%;
+  height: auto;
+  padding-right: 2.3rem;
+}
+
+#upper-box h1 {
+  font-size: 3rem;
+  color: white;
+  font-weight: 500;
+  line-height: 1;
+}
+
+#upper-box p {
+  font-size: 1.5rem;
+  color: white;
+  padding-top: 2rem;
+  margin-bottom: 1.78rem;
+}
+
+#upper-box .button {
+  color: white;
+  text-align: center;
+  background-color: #969669;
+  width: 80%;
+  border-radius: 5px;
+  /*transition: color 200ms linear 0.1s;*/
+  padding: .44rem 0;
 }
