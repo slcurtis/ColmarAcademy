@@ -18,6 +18,16 @@ header {
   width: 100%;
 }
 
+@media only screen and (max-width: 745px) {
+  header .desktop {
+    display: none;
+  }
+}
+
+header .mobile {
+  display: none;
+}
+
 header .container {
   display: flex;
   justify-content: space-between;
@@ -40,6 +50,10 @@ header .logo {
 header nav ul {
   display: flex;
 }
+
+/*nav .container.mobile {
+  width: 100%;
+}*/
 
 .desktop nav li {
  padding-right: 1.33rem;
@@ -96,9 +110,90 @@ section {
 #upper-box .button {
   color: white;
   text-align: center;
-  background-color: #969669;
+  background-color: #87875e;
   width: 80%;
   border-radius: 5px;
   /*transition: color 200ms linear 0.1s;*/
   padding: .44rem 0;
+}
+
+/* Middle Box */
+.mid-box {
+  /*display: flex;*/
+  width: 100%;
+  padding: 1.78rem 1.33rem;
+  height: 720px;
+}
+
+.mid-left {
+  width: 60%;
+  padding: 1.78rem 1.33rem 0 1.33rem;
+}
+
+.mid-left img {
+  width: 100%;
+}
+
+.mid-left h2 {
+  font-size: 2.25rem;
+  padding-top: 1.78rem;
+  padding-bottom: 1.33rem;
+  color: #87875e;
+}
+
+#mid-box .mid-left h2 {
+  font-weight: 700;
+}
+
+.mid-left p {
+  line-height: 1.2rem;
+  font-size: 1.5rem;
+  font-weight: 300;
+  padding-bottom: 3.50rem
+}
+
+.mid-left span {
+  font-size: .9rem;
+  font-weight: 500;
+  font-style: oblique;
+}
+
+.mid-right {
+  width: 35%;
+  /*display: block;*/
+}
+
+.right-content {
+  display: flex;
+  justify-content: space-between;
+  height: 25%;
+  padding-top: 1.78rem;
+  line-height: 1.5;
+}
+
+.right-content:nth-child(3n+3) {
+  background-color: #e0e0d2;
+}
+
+.right-content img {
+   width: 50%;
+}
+
+.right-content h2 {
+  font-size: 1.2rem;
+  color: #87875e;
+  padding-bottom: .44rem;
+}
+
+.information {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  padding-left: .89rem;
+}
+.right-content a {
+  text-decoration: none;
+  color: #cc3300;
+  padding-top: .44rem;
 }
