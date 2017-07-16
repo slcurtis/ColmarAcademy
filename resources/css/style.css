@@ -197,3 +197,57 @@ section {
   color: #cc3300;
   padding-top: .44rem;
 }
+
+/* Lower Box*/
+
+#lower-box {
+  align-items: center;
+  flex-direction: column;
+  padding: 1.78rem 1.33rem;
+  background-color: #e0e0d2;
+}
+
+#lower-box h1 {
+  text-align: center;
+  padding-bottom: 1.78rem;
+}
+
+ section .learning {
+  color: #87875e;
+  font-size: 2rem;
+}
+
+#lower-box .classes {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+#lower-box .item {
+  display: flex;
+  flex-direction: column;
+  max-width: 30%;
+  margin: 0 .89rem 1.78rem .89rem;
+  background-color: #ffffff;
+}
+.image-container img {
+  display: block;
+  max-width: 100%;
+}
+
+#lower-box .content {
+  padding: .89rem .89rem 1.78rem .89rem;
+}
+
+#lower-box .content h3 {
+  padding: .89rem 0 0.44rem 0;
+}
+.content h3 {
+  font-size: 1.6rem;
+  font-weight: 600;
+  color: #87875e;
+}
+.content p {
+  padding-top: .44rem;
+  font-weight: lighter;
+}
