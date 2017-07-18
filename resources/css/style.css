@@ -171,15 +171,13 @@ h1 {
 .content-container {
   display: flex;
   align-items: center;
-}
-
-.content-container.border {
   padding: .89rem;
   border-bottom: 1px solid #eaeae1;
 }
 
+
 .content-container:nth-child(3n+3) {
-  background-color: #e0e0d2;
+  background-color: #eaeae1;
 }
 
 .right-content img {
@@ -221,7 +219,7 @@ h1 {
   padding-bottom: 1.78rem;
 }
 
- section .learning {
+#lower-box .learning {
   color: #87875e;
   font-size: 2rem;
 }
@@ -232,16 +230,19 @@ h1 {
   justify-content: center;
 }
 
-#lower-box .item {
+#lower-box .course {
   display: flex;
   flex-direction: column;
-  max-width: 30%;
+  max-width: 27%;
   margin: 0 .89rem 1.78rem .89rem;
   background-color: #ffffff;
+  border-radius: 10px;
 }
+
 .image-container img {
   display: block;
   max-width: 100%;
+  border-radius: 10px;
 }
 
 #lower-box .content {
@@ -252,38 +253,112 @@ h1 {
   padding: .89rem 0 0.44rem 0;
 }
 .content h3 {
-  font-size: 1.6rem;
+  font-size: 1.5rem;
   font-weight: 600;
   color: #87875e;
 }
 .content p {
   padding-top: .44rem;
-  font-weight: lighter;
+  font-weight: 300;
 }
-/*Thesis*/
 
-#thesis {
+/*Thesis Box*/
+
+#thesis-box {
   padding-top: 1.78rem;
 }
 
-#thesis h3 {
+#thesis-box h3 {
   font-size: 1.78rem;
+  text-align: center;
+  padding: .89rem;
+  color: #87875e;
+  font-weight: 700;
 }
 
-div.thesis {
+div .thesis-box {
   padding: 1.78rem 1.33rem;
   align-items: flex-start;
 }
 
-.flex {
-  display: flex;
+div .information-left {
+  width: 58.5%;
+  padding: .89rem;
 }
 
-div .information-left {
-  width: 58%;
-  padding: .89rem;
+.thesis-text {
+  padding-bottom: 1.78rem;
+}
+
+.thesis-text h4 {
+  color: #87875e;
+  font-weight: 600;
+  font-size: 1.5rem;
+  padding-top: 1.33rem;
+  padding-bottom: 1.33rem;
+}
+
+.thesis-text p {
+  font-weight: 300;
 }
 
 .information-right {
   width: 42%;
+  padding-bottom: 8.06rem;
+}
+
+.exhibit {
+  padding-top: .89rem;
+}
+
+.exhibit img {
+  width: 38%;
+  padding-left: .89rem;
+}
+
+.exhibit:first-child {
+  background-color: #eaeae1;
+  padding-bottom: .89rem;
+}
+
+.exhibit-text h5 {
+  font-size: 1.5rem;
+  font-weight: 500;
+  padding-left: .89rem;
+  color: #87875e;
+}
+
+.exhibit-text p {
+  font-size: 1rem;
+  font-weight: 300;
+  padding-top: 2rem;
+  padding-left: .89rem;
+}
+
+/*Footer*/
+
+footer {
+  border-top: 1px solid #eaeae1;
+  justify-content: space-between;
+  padding: 1.2rem;
+}
+
+footer h6 {
+  display: inline-block;
+  font-size: .9rem;
+  color: #87875e;
+  font-weight: 300;
+}
+
+.footer-right {
+  text-align: center;
+}
+
+ul li {
+  list-style: none;
+  display: inline-block;
+}
+
+ul li h6 {
+  padding-right: .5rem;
 }
