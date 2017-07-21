@@ -36,7 +36,7 @@ header .logo {
 }
 
  header #first {
-  color: black;
+  color: #000000;
   font-weight: lighter;
 }
 
@@ -67,13 +67,8 @@ nav .learning-options li a {
   color: #a1a178;
 }
 
- a:hover {
+ nav li a:hover {
   border-bottom: 2px solid #a1a178;
-}
-
-.mobile-nav img {
-  height: 2rem;
-  text-decoration: none;
 }
 
 @media only screen and (min-width: 715px) {
@@ -125,7 +120,7 @@ nav .learning-options li a {
 }
 
 #upper-box h1, #upper-box p {
-  color: white;
+  color: #fff;
 }
 
 #upper-box p {
@@ -135,7 +130,7 @@ nav .learning-options li a {
 }
 
 #upper-box .button {
-  color: white;
+  color: #fff;
   text-align: center;
   background-color: #87875e;
   width: 80%;
@@ -144,10 +139,8 @@ nav .learning-options li a {
   transition: background-color 400ms linear;
 }
 
-.upper-text a  {
-  transition: background-color 0.5s ease;
-  background-color: red;
-  text-decoration: none;
+a {
+  text-decoration: none
 }
 
 @media only screen and (max-width: 715px) {
@@ -166,6 +159,7 @@ nav .learning-options li a {
    color: #a1a178;
    font-size: 2rem;
  }
+
  #motto p {
     color: #b6b696;
     font-size: 1.2rem;
@@ -173,11 +167,20 @@ nav .learning-options li a {
     padding-top: 1.33rem;
   }
    #upper-box .button {
-    padding-bottom: 1.78rem;
+    padding-bottom: .75rem;
   }
-/*#motto a  {
-    width: 100%
-  }*/
+ .upper-text {
+   padding-left: .89rem;
+ }
+ div .information {
+   padding-top: 1.78rem;
+ }
+ div .information p {
+   padding-bottom: .89rem;
+ }
+ div .information a {
+   font-size: .80rem;
+ }
 }
 
 
@@ -203,15 +206,6 @@ nav .learning-options li a {
 
 #mid-box .mid-left h2 {
   font-weight: 800;
-}
-
-.information a:hover {
-  text-decoration: none;
-
-}
-
-.information a{
-  text-decoration: none;
 }
 
 .mid-left p {
@@ -240,7 +234,7 @@ nav .learning-options li a {
   border-bottom: 1px solid #eaeae1;
   width: 38%;
   display: block;
-  margin-bottom: 3.2rem;
+  margin-bottom: 3.6rem;
 }
 
 .content-container {
@@ -269,21 +263,23 @@ nav .learning-options li a {
 }
 
 .information a {
-  text-decoration: none;
-  color: #ff794d;
+  color: #a1a178;
   padding-top: .44rem;
   font-size: .9rem;
   font-weight: 300;
 }
+
+.information a:hover {
+  color: #ff794d;
+}
+
+.information a {
+  transition: background-color 0.5s linear;
+}
+
 .right-content p {
   font-size: .85rem;
   padding-bottom: 2rem;
-}
-
-@media only screen and (min-width: 715px) {
-  .content-container img .mobile {
-    display: none;
-  }
 }
 
 @media only screen and (max-width: 715px) {
@@ -293,13 +289,29 @@ nav .learning-options li a {
     width: 100%;
   }
   .right-content img {
-    width: 100%;
+    width: 450px;
+    height: 275px;
+    padding: .89rem;
   }
+
+  /*.right-content img {
+    display: none;
+  }
+  .right-content img .mobile {
+    display: block;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    background: ".//resources/images/information-orientation.jpg";
+    width: 691px;
+    height: 326px;
+    padding: .89rem;
+  }*/
   .content-container {
     flex-flow: column;
+    border-bottom: none;
   }
   .content-container:nth-child(3n+3) {
-      background-color: white;
+      background-color: #ffffff;
       }
 }
 
@@ -360,15 +372,39 @@ nav .learning-options li a {
   font-weight: 300;
 }
 
+.mobile-classes {
+  display:none;
+}
+
 @media only screen and (max-width: 715px) {
-  div .image-container, .content p {
+  div .image-container, .content p, #lower-box .classes  {
     display: none;
    }
    #lower-box .learning  {
-     font-size: 1.3rem;
+     font-size: 1.8rem;
    }
    .content h3 {
-     font-size: 1rem;
+     font-size: 2rem;
+   }
+   .mobile-classes {
+     display: flex;
+     flex-direction: column;
+   }
+   .button-mobile{
+     text-align: left;
+     background-color: #fff;
+     padding:.89rem;
+     color: #a1a178;
+     display: block;
+     margin-top: .44rem;
+     border-radius: .44rem;
+     width: 100;
+     cursor: pointer;
+   }
+   .button-mobile h5 {
+     text-shadow: 1.5px 1.5px #d5d5c3;
+     padding-right: 4.2rem;
+     font-size: 1.2rem;
    }
 }
 /*Thesis Box*/
@@ -456,7 +492,7 @@ div .information-left {
     display: none;
   }
   #thesis-box h3 {
-    font-size: 1.3rem;
+    font-size: 1.8rem;
     margin-bottom: 1.78rem;
   }
   div .information-left {
