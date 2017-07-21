@@ -40,12 +40,14 @@ header .logo {
   font-weight: lighter;
 }
 
+/*Media Queries Header General*/
+
 @media only screen and (max-width: 715px) {
-header .logo, .logo span {
+  header .logo, .logo span {
     display: none;
   }
-header {
-  background-color: #f5f5f0;
+  header {
+    background-color: #f5f5f0;
    }
 }
 
@@ -56,7 +58,7 @@ header nav ul {
 }
 
 .desktop nav li {
- padding-right: 1.33rem;
+  padding-right: 1.33rem;
 }
 
 nav ul a {
@@ -68,8 +70,10 @@ nav .learning-options li a {
 }
 
  nav li a:hover {
-  border-bottom: 2px solid #a1a178;
+   border-bottom: 2px solid #a1a178;
 }
+
+/*Media Queries Header Nav*/
 
 @media only screen and (min-width: 715px) {
  header .mobile-nav {
@@ -143,6 +147,8 @@ a {
   text-decoration: none
 }
 
+/*Media Queries Upper-box*/
+
 @media only screen and (max-width: 715px) {
   #upper-box img {
     width: 100%;
@@ -161,12 +167,12 @@ a {
  }
 
  #motto p {
-    color: #b6b696;
-    font-size: 1.2rem;
-    margin-bottom: 1.33rem;
-    padding-top: 1.33rem;
+   color: #b6b696;
+   font-size: 1.2rem;
+   margin-bottom: 1.33rem;
+   padding-top: 1.33rem;
   }
-   #upper-box .button {
+ #upper-box .button {
     padding-bottom: .75rem;
   }
  .upper-text {
@@ -182,7 +188,6 @@ a {
    font-size: .80rem;
  }
 }
-
 
 /* Middle Box Left Side*/
 
@@ -220,6 +225,8 @@ a {
   font-weight: 400;
   font-style: oblique;
 }
+
+/*Media Queries Middle Box Left*/
 
 @media only screen and (max-width: 715px) {
   .mid-left {
@@ -259,7 +266,7 @@ a {
 }
 
 .information {
-  padding-left: .89rem;
+  padding: .89rem;
 }
 
 .information a {
@@ -282,37 +289,56 @@ a {
   padding-bottom: 2rem;
 }
 
+/*Media Queries Middle Box Right*/
+
+@media only screen and (min-width: 715px) {
+  .right-content img.mobile {
+    display: none;
+  }
+  .right-content h2.mobile {
+    display: none;
+  }
+}
 @media only screen and (max-width: 715px) {
+  .right-content img.desktop {
+    display: none;
+  }
+  .right-content h2.desktop {
+    display: none;
+  }
   .right-content {
     display: inherit;
     flex-direction: column;
     width: 100%;
+    display: block;
+    padding-bottom: 0rem;
+    margin-bottom: .89rem;
+  }
+  .content-container {
+    display: flex;
+    flex-direction: column;
+    border-bottom: none;
+    padding-top: 0rem;
+  }
+  .content-container .information {
+    line-height: .9;
+    padding-top: 1.78rem 1.33rem .5rem 1.33rem;
   }
   .right-content img {
-    width: 450px;
-    height: 275px;
+    width: 100%;
+    height: auto;
+    max-height: 272px;
     padding: .89rem;
   }
-
-  /*.right-content img {
+  .right-content img.desktop {
     display: none;
-  }
-  .right-content img .mobile {
-    display: block;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
-    background: ".//resources/images/information-orientation.jpg";
-    width: 691px;
-    height: 326px;
-    padding: .89rem;
-  }*/
-  .content-container {
-    flex-flow: column;
-    border-bottom: none;
   }
   .content-container:nth-child(3n+3) {
       background-color: #ffffff;
-      }
+}
+  .container .right-content {
+    padding-top: 0rem;
+  }
 }
 
 /* Lower Box*/
@@ -376,6 +402,8 @@ a {
   display:none;
 }
 
+/*Media Queries Lower Box*/
+
 @media only screen and (max-width: 715px) {
   div .image-container, .content p, #lower-box .classes  {
     display: none;
@@ -399,7 +427,6 @@ a {
      margin-top: .44rem;
      border-radius: .44rem;
      width: 100;
-     cursor: pointer;
    }
    .button-mobile h5 {
      text-shadow: 1.5px 1.5px #d5d5c3;
@@ -407,6 +434,7 @@ a {
      font-size: 1.2rem;
    }
 }
+
 /*Thesis Box*/
 
 #thesis-box {
@@ -484,22 +512,29 @@ div .information-left {
   padding-left: .89rem;
 }
 
+/*Media Queries Thesis Box*/
+
 @media only screen and (max-width: 715px) {
   .information-right.desktop, .container.exhibit {
     display: none;
    }
   .thesis-text.desktop {
     display: none;
+}
+  #thesis-box {
+    padding-top: .5rem;
   }
+
   #thesis-box h3 {
     font-size: 1.8rem;
-    margin-bottom: 1.78rem;
+    margin-bottom: .5rem;
   }
   div .information-left {
     width: 100%;
     padding: 0rem 0rem;
   }
 }
+
 /*Footer*/
 
 footer {
@@ -527,6 +562,8 @@ ul li {
 ul li h6 {
   padding-right: .5rem;
 }
+
+/*Media Queries Footer*/
 
 @media only screen and (max-width: 715px) {
 li h6 {
