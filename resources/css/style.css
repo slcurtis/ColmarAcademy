@@ -319,10 +319,11 @@ a {
     flex-direction: column;
     border-bottom: none;
     padding-top: 0rem;
+    align-items: flex-start;
   }
-  .content-container .information {
+  .right-content .information {
     line-height: .9;
-    padding-top: 1.78rem 1.33rem .5rem 1.33rem;
+    padding: 1.33rem 0rem .0rem 1.78rem;
   }
   .right-content img {
     width: 100%;
@@ -334,7 +335,7 @@ a {
     display: none;
   }
   .content-container:nth-child(3n+3) {
-      background-color: #ffffff;
+    background-color: #ffffff;
 }
   .container .right-content {
     padding-top: 0rem;
